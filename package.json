@@ -8,8 +8,8 @@
     "url": "git+https://github.com/grey-sky-software/website.git"
   },
   "engines": {
-    "node": "16.15.0",
-    "npm": "8.5.5"
+    "node": "18.2.0",
+    "npm": "8.9.0"
   },
   "scripts": {
     "build": "rm -rf docs && parcel build src/index.html --no-cache --dist-dir docs && cp CNAME docs/CNAME",
@@ -20,7 +20,7 @@
   "author": "Grey Sky Software",
   "license": "AGPL-3.0",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.5.0",
-    "parcel": "^2.5.0"
+    "@parcel/transformer-sass": "^2.4.1",
+    "parcel": "^2.4.1"
   }
 }
