@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "description": "The code that makes up the official Grey Sky Software website ",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/grey-sky-software/website.git"
@@ -13,14 +12,15 @@
     "npm": "8.5.5"
   },
   "scripts": {
-    "build": "rm -rf docs && parcel build src/index.html --out-dir docs",
-    "dev": "rm -rf docs && parcel src/index.html --out-dir docs",
+    "build": "rm -rf dist && parcel build src/index.html --no-cache --dist-dir dist",
+    "dev": "rm -rf dist && parcel src/index.html --no-cache --dist-dir dist",
     "lint": "eslint --ext .js src/",
     "start": "npm run dev"
   },
   "author": "Grey Sky Software",
   "license": "AGPL-3.0",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
     "parcel": "^2.5.0"
   }
 }
