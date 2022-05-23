@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+@import url('./tailwind.css');
+
 html,
 body {
-  background-color: #21252B;
-  color: rgb(157, 165, 167);
-  font-family: sans-serif;
+  font-family: 'Overpass Mono', monospace;
+}
+
+a {
+  @apply text-slate-400;
+}
+
+.font-decorative {
+  font-family: 'Bungee Hairline', monospace;
 }
