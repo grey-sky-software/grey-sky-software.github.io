@@ -4,7 +4,6 @@
 @import url('https://unpkg.com/sanitize.css/typography.css');
 
 // Our fonts of choice
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
 // Pull in any dependencies
@@ -17,8 +16,4 @@ body {
 
 a {
   @apply text-slate-400;
-}
-
-.font-decorative {
-  font-family: 'Bungee Hairline', monospace;
 }
