@@ -8,8 +8,8 @@
     "url": "git+https://github.com/grey-sky-software/website.git"
   },
   "engines": {
-    "node": "16.15.0",
-    "npm": "8.5.5"
+    "node": "^18.12.1",
+    "npm": "^8.19.2"
   },
   "scripts": {
     "build": "rm -rf docs && parcel build src/index.html --no-cache --dist-dir docs && cp CNAME docs/CNAME",
