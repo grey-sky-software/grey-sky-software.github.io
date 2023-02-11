@@ -1,19 +1,21 @@
-// Use sanitize to clean up cross-browser defaults
-@import url('https://unpkg.com/sanitize.css');
-@import url('https://unpkg.com/sanitize.css/forms.css');
-@import url('https://unpkg.com/sanitize.css/typography.css');
+@use 'sass:color';
 
-// Our fonts of choice
-@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
-
-// Pull in any dependencies
-@import url('./vendor.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html,
 body {
-  font-family: 'Overpass Mono', monospace;
+  font-family: 'Gantari', sans-serif;
+  background-color: #2e3440;
+  color: #d8dee9;
 }
 
 a {
-  @apply text-slate-400;
+  color: #{color.scale(#d8dee9, $alpha: -33%)};
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
